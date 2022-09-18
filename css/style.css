@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hind", sans-serif;
+}
+
+body {
+  background: #141414;
+}
+/* ------------------------------------------------ Navbar ----------------------------------------------------------- */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  /* background: #141414; */
+  background: #00000000;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#MenuItems {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#MenuItems li {
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+
+#MenuItems li a {
+  padding: 0.5rem 1rem;
+}
+
+#MenuItems li a:hover {
+  padding: 0.5rem 1rem;
+  /* background: #d266017d; */
+  background-image: linear-gradient(#3d4be6, #f8a8b5);
+  border-radius: 10rem;
+}
+
+.menu-icon {
+  display: none;
+  height: 3rem;
+}
+
+/* ---------- Home Page ----------------- */
+
+.container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  background: #141414;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  transform: translateY(-6.4rem);
+  flex-wrap: wrap;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.heading h1 {
+  color: white;
+  font-size: 6rem;
+  margin-top: 5rem;
+  text-align: center;
+  animation: homeContentBtnAnim 3s ease-in;
+}
+
+.heading h2 {
+  color: #888;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.anim {
+  animation: homeContentBtnAnim 3s ease-in;
+}
+
+.anim lottie-player {
+  width: 600px;
+  height: 600px;
+}
+
+/* ----------------------------- Testing ------------------------------- */
+
+.skills {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  background: #141414;
+  transform: translateY(-6.44rem);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills h1 {
+  color: white;
+  font-size: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.skl-img {
+  display: grid;
+  gap: 8rem 20rem;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 40rem;
+}
+
+.img-skills {
+  height: 8rem;
+  box-shadow: 5px 10px 20px 20px #5858583f;
+}
+
+/* ----------------------------- WORK PAGE------------------------------ */
+
+.mock {
+  display: flex;
+  transform: translateY(-6.5rem);
+  /* background: #dbe5f2; */
+  background: #141414;
+}
+
+.proj-h1 {
+  font-size: 25rem;
+  color: #ff7f502f;
+  transform: translate(4rem, -35rem);
+}
+
+.mock a {
+  font-size: 8rem;
+  color: #ffffff;
+}
+
+.mock-img {
+  display: none;
+  width: 20vw;
+  height: 20vh;
+}
+
+.project-ul {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40rem;
+  flex-direction: column;
+}
+
+.li-inwords :hover + .mock-img {
+  display: block;
+  transform: translate(30rem, -13rem);
+  position: absolute;
+  opacity: 0.5;
+  border-radius: 0.5rem;
+}
+
+.li-inwords :hover {
+  text-decoration: line-through 0.7rem #141414;
+}
+
+.li-mazdoor :hover + .mock-img {
+  display: block;
+  transform: translate(33rem, -13rem);
+  position: absolute;
+  opacity: 0.5;
+  border: solid white;
+  border-radius: 0.5rem;
+}
+
+/* ----------------------- About Page ------------------------------- */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#141414, #d9f7f0);
+}
+
+.about-container h1 {
+  text-align: center;
+  font-size: 10rem;
+  color: #00000000;
+  -webkit-text-stroke: #ffffff 0.3rem;
+}
+
+.about-main {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-main h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  font-size: 1.5rem;
+  font-weight: 10;
+  margin-bottom: 3rem;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+}
+
+.mail p {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  #MenuItems {
+    display: none;
+    position: absolute;
+    background-color: #d9f7f0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  #MenuItems li:hover {
+    display: inline-block;
+    background-color: none;
+    transition: 0.3s ease;
+  }
+
+  #MenuItems li a:hover {
+    background: none;
+  }
+
+  #MenuItems li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ #MenuItems {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    padding: 1rem 1rem 0 0;
+  }
+
+  #MenuItems li {
+    padding: 0rem;
+  }
+
+  #MenuItems li a {
+    color: #141414;
+  }
+}
+
+/* ----------------------- Custom Scrollbar ------------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* ----------------------- Keyframes ------------------------------- */
+
+@keyframes homeContentAnim {
+  from {
+    transform: translateX(-50rem);
+  }
+}
+
+@keyframes homeContentBtnAnim {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes homeSvgAnim {
+  from {
+    transform: translateX(50rem);
+  }
+}
+
+@keyframes testWorkAnim {
+  0% {
+    transform: translateX(-300rem);
+    font-style: italic;
+  }
+
+  90% {
+    transform: translateX(10rem);
+    font-style: italic;
+  }
+}

@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+nav img {
+  width: 10rem;
+  height: 5rem;
+}
+
+.menu-icon {
+  display: absolute;
+  height: 3rem;
+}
+
+.anim lottie-player {
+  width: 300px;
+  height: 300px;
+}
+
+.skl-img {
+  grid-template-columns: auto;
+  margin-bottom: 4rem;
+}
+
+.proj-h1 {
+  font-size: 5rem;
+  text-align: center;
+  /* margin-bottom: 3rem; */
+}
+
+.project-ul {
+  margin-left: 0;
+  position: relative;
+}
+
+.mock {
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.mock a {
+  font-size: 4rem;
+}
+
+.proj-h1 {
+  transform: translate(0, 0);
+}
+
+.about-container h1 {
+  font-size: 4rem;
+  -webkit-text-stroke: #ffffff 0.15rem;
+}
+
+.dev-img {
+  display: none;
+}
+
+.about-main h2,
+.about-main p {
+  text-align: center;
+}
+
+.mail {
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.skills h1 {
+  margin-top: 2rem;
+}
+
+.l {
+  flex-direction: row;
+}
+
+/* ---------------------------------- Inwords page css ----------------------------- */
+
+.innerrow {
+  transform: translateX(0);
+}
+
+.innerrow h1 {
+  font-size: 4rem;
+}
+
+.row {
+  flex-direction: column-reverse;
+}
+
+.imgin {
+  height: 30%;
+  width: 70%;
+  transform: translate(3rem, 2rem);
+}
+
+.innerrow1 {
+  transform: translateX(0);
+  margin-top: 6rem;
+}
+
+.innerrow1 h1 {
+  font-size: 3rem;
+}
+
+.row1 {
+  flex-direction: column;
+}
+
+.imgin1 {
+  height: 33%;
+  width: 70%;
+  transform: translate(3rem, 2rem);
+}
+
+.ht {
+  height: 60vh;
+  margin-top: 10rem;
+}
+
+.ht1 {
+  height: 60vh;
+}
+
+/* ------------------- MAZDOOR PAGE -------------------------- */
+
+.m-container {
+  height: 35vh !important;
+  margin-top: 3rem;
+}
+
+.m-container h1 {
+  font-size: 4rem !important;
+  margin-top: 0 !important;
+}
+
+.m-container img {
+  width: 88vw !important;
+  height: 24vh !important;
+}
+
+.m-container-1 {
+  padding-top: 11rem !important;
+}
+
+.m-container p {
+  transform: translateY(0rem) !important;
+  font-size: 1.3rem !important;
+}
+
+.m-container-2 video {
+  width: 100vw;
+}
+
+.m-container-2 {
+  height: 30vh !important;
+  padding-top: 1rem !important;
+}
+
+/*------------------- SANESTORE PAGE -------------------- */
+
+.s-container {
+  height: 20vh;
+  width: 99vw;
+  margin-top: 7rem;
+}
+
+.s-container h1 {
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+.s-container p {
+  font-size: 1.1rem;
+  transform: translateY(0rem);
+  width: 90vw;
+}
+
+.s-container img {
+  height: auto;
+  width: 80vw;
+}
+
+.s-container-1 {
+  padding-top: 13.3rem;
+}
+
+.s-container-1 img {
+  width: 100vw;
+}

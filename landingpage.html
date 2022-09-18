@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 480px)"
+      href="css/mobile.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>WEB DEVELOPER | Portfolio</title>
+  </head>
+  <body>
+    <!-- ---------- Navbar ----------------- -->
+    <nav>
+      <img src="images/NeetVeratLogo.webp" alt="nvecho logo" />
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div id="MenuItems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#proj" target="_blank">Projects</a></li>
+          <li><a href="#abt">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- ---------- Home Page ----------------- -->
+    <div class="container l">
+      <!-- <div class="overlay"></div> -->
+      <div class="heading">
+        <h1>Hi, <span class="underline-orange">I'm Neet</span></h1>
+        <h2>
+          I design Websites, Android applications <br />
+          & design svg vectors.
+        </h2>
+      </div>
+      <div class="anim">
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_toofqbxc.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+
+    <!-- ---------------------------- Testing -------------------------------- -->
+
+    <section class="skills">
+      <h1>Skills</h1>
+      <div class="skl-img">
+        <img
+          src="images/html-5-logo-svgrepo-com.svg"
+          class="img-skills"
+          alt="html logo"
+        />
+        <img src="images/css (1).svg" class="img-skills" alt=" css logo" />
+        <img
+          src="images/javascript.svg"
+          class="img-skills"
+          alt="javascript logo"
+        />
+        <img src="images/java.svg" class="img-skills" alt="java logo" />
+        <img
+          src="images/illustrator.svg"
+          class="img-skills"
+          alt="illustrator logo"
+        />
+        <img
+          src="images/adobe-xd-logo-svgrepo-com.svg"
+          class="img-skills"
+          alt="adobe XD logo"
+        />
+      </div>
+    </section>
+
+    <div id="proj" class="mock">
+      <!-- <marquee
+        direction="left"
+        scrollamount="30"
+        style="color: #ff625b; font-size: 5rem; transform: translateY(-12rem)"
+      >
+        <em>
+          Projects Projects Projects Projects Projects Projects Projects
+          Projects</em
+        >
+      </marquee> -->
+      <h1 class="proj-h1">PROJECTS</h1>
+      <ul class="project-ul">
+        <li class="li-inwords">
+          <a href="Inwords.html" target="_blank" rel="noopener noreferrer"
+            >Inwords</a
+          >
+          <img class="mock-img" src="images/GalaxyS20Ultra.webp" alt="" />
+        </li>
+        <li class="li-inwords li-mazdoor">
+          <a href="mazdoor.html" target="_blank" rel="noopener noreferrer"
+            >Mazdoor</a
+          >
+          <img
+            class="mock-img"
+            src="images/Screenshot 2022-05-26 213332.webp"
+            alt=""
+          />
+        </li>
+        <li class="li-inwords">
+          <a href="sanestore.html" target="_blank" rel="noopener noreferrer"
+            >SaneStore</a
+          >
+          <img
+            class="mock-img"
+            src="images/Screenshot 2022-05-28 212405.webp"
+            alt=""
+          />
+        </li>
+        <!-- <li class="li-inwords">
+          <a href="#" target="_blank" rel="noopener noreferrer">PV Portfolio</a>
+          <img class="mock-img" src="images/GalaxyS20Ultra.png" alt="" />
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- -----------------About Section----------------------- -->
+
+    <section id="abt" class="about-container">
+      <h1>About Me</h1>
+      <div class="about-main">
+        <div>
+          <h2>Neet Verat</h2>
+          <p class="details">
+            Hello i am an Full Stack Web Developer <br />
+            & Android Developer
+          </p>
+          <div class="mail">
+            <img src="images/icons8-mail-48.webp" alt="mail at image" />
+
+            <p>veratnatie@gmail.com</p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="dev-img"
+            src="images/IMG20201221192841-removebg-preview.webp"
+            alt="Image of the developer"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>

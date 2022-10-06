@@ -114,36 +114,49 @@ nav {
 
 .skills h1 {
   color: white;
-  font-size: 5rem;
+  font-size: 2rem;
   margin-top: 8rem;
   margin-bottom: 4rem;
 }
 
 .skl-img {
   display: grid;
-  gap: 8rem 20rem;
-  grid-template-columns: auto auto auto;
-  margin-bottom: 40rem;
+  /* gap: 1rem 4rem; */
+  grid-template-columns: auto auto auto auto auto auto ;
+  margin-bottom: 12rem;
+  background: #2b2b2b;
+  padding: 2rem 4rem;
+  border-radius: 1rem ;
+  border: .1rem solid white;
 }
 
 .img-skills {
-  height: 8rem;
-  box-shadow: 5px 10px 20px 20px #5858583f;
+  height: 10rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  /* background: #414141; */
+  background: #141414;
+  /* box-shadow: 0px 5px 10px 10px #5858583f; */
 }
 
 /* ----------------------------- WORK PAGE------------------------------ */
 
 .mock {
   display: flex;
-  transform: translateY(-6.5rem);
-  /* background: #dbe5f2; */
+  margin-bottom: 35rem;
+  /* transform: translateY(-6.5rem);
+  background: #dbe5f2; 
   background: #141414;
+  background: #191919; */
 }
 
 .proj-h1 {
-  font-size: 25rem;
+  font-size: 20rem;
   color: #ff7f502f;
-  transform: translate(4rem, -35rem);
+  text-align: center;
+  /* transform: translate(4rem, -35rem); */
+  /* background: #191919; */
 }
 
 .mock a {

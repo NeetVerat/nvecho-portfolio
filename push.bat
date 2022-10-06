@@ -1,4 +1,4 @@
 echo off
 git add .
-git commit -m "Initial commit"
+git commit -m "Updated Landing Page"
 git push
